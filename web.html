@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programing Aja</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="wrapper">
+            <div class="logo"><a href=''>Ivando</a></div>
+            <div class="menu">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#tutors">Tutors</a></li>
+                    <li><a href="#partners">Partners</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="" class="tbl-biru">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="wrapper">
+        <!--untuk home-->
+        <section id="home">
+            <img src="img/web.jpg"/>
+            <div class="kolom">
+                <p class="deskripsi">Belajar Programing</p>
+                <h2>Tetaplah Hidup, Walau tidak berguna</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    <span id="dots">...</span><span id="more">Aperiam autem libero porro earum. Saepe cum qui dignissimos aperiam reprehenderit maxime sit! Placeat molestias dolorum quae exercitationem quo explicabo inventore iusto vitae pariatur nulla! Eos, laborum! Et vitae cum fugit distinctio.</span>
+                </p>
+                <button type="button" id="read" onclick="read()">Baca Selengkapnya</button>
+                <script type="text/javascript">
+                var i=0
+                function read(){
+                    if(!i){
+                        document.getElementById("more").style.display = "inline";
+                        document.getElementById("dots").style.display = "none";
+                        document.getElementById("read").innerHTML = "Baca Lebih Sedikit";
+                        i=1;
+                    }
+                    else{
+                        document.getElementById("more").style.display = "none";
+                        document.getElementById("dots").style.display = "inline";
+                        document.getElementById("read").innerHTML = "Baca Selengkapnya";
+                        i=0;
+                    }
+                }
+                
+                </script>
+            </div>
+        </section>
+
+        <!--untuk courses-->
+        <section id="courses">
+            <div class="kolom">
+                <p class="deskripsi">You Will Need This</p>
+                <h2>Online Courses</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi quia, ducimus aliquam a tenetur perspiciatis odio obcaecati numquam beatae recusandae.</p>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi quia, ducimus aliquam a tenetur perspiciatis odio obcaecati numquam beatae recusandae.</p>
+                <p><a href="" class="tbl-biru">Pelajari Lebih Lanjut</a></p>
+            </div>
+            <img src="img/courses.jpg"/>
+        </section>
+
+        <!--untuk tutors-->
+        <section id="tutors">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi">Our Top Tutors</p>
+                    <h2>Tutors</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, iste.</p>
+                </div>
+
+                <div class="tutor-list">
+                    <div class="kartu-tutor">
+                        <img src="img/person.jpg"/>
+                        <p>Ivando Rohsandi</p>
+                    </div>
+                    <div class="kartu-tutor">
+                        <img src="img/person.jpg"/>
+                        <p>Ivando Rohsandi</p>
+                    </div>
+                    <div class="kartu-tutor">
+                        <img src="img/person.jpg"/>
+                        <p>Ivando Rohsandi</p>
+                    </div>
+                    <div class="kartu-tutor">
+                        <img src="img/person.jpg"/>
+                        <p>Ivando Rohsandi</p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!--untuk partners-->
+        <section id="partners">
+            <div class="tengah">
+                <div class="kolom">
+                    <p class="deskripsi">Our Top Partners</p>
+                    <h2>Partners</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia minus vel fugiat quis laborum molestias facere obcaecati, ut deserunt inventore?</p>
+                </div>
+
+                <div class="partner-list">
+                    <div class="kartu-partner">
+                        <img src="img/rakun.jpg"/>
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="img/rakun.jpg"/>
+                    </div>
+                    <div class="kartu-partner">
+                        <img src="img/rakun.jpg"/>
+                    </div> 
+                    <div class="kartu-partner">
+                        <img src="img/rakun.jpg"/>
+                    </div> 
+                    <div class="kartu-partner">
+                        <img src="img/rakun.jpg"/>
+                    </div>    
+                </div>
+            </div>
+        </section>
+    </div>
+    <!--untuk contact-->
+    <div id="contact">
+        <div class="wrapper">
+            <div class="footer">
+                 <div class="footer-section">
+                     <h3>Stmik pgri</h3>
+                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, sed!</p>
+                 </div>
+                 <div class="footer-section">
+                    <h3>About</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, sed!</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Jl. Hampa No.69 Nusa Kambangan</p>
+                    <p>Kode Pos : 6969 </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Social</h3>
+                    <p><b>Instagram</b>@ivando.r</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="copyright">
+        <div class="wrapper">
+            &copy; 2021. <b>ivando rohsandi</b> All Rights Reseverd
+        </div>
+    </div>
+</body>
+</html>
